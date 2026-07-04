@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F1E5D3" />
+
+  <!-- SEO -->
+  <title>Pottery by Séverine — Céramique artisanale & pièces uniques</title>
+  <meta name="description" content="Atelier de céramique artisanale. Séverine façonne à la main vases, bols, tasses, assiettes et pièces uniques — des créations terreuses, douces et intemporelles." />
+  <meta name="keywords" content="céramique, poterie, artisanat, fait main, vases, bols, tasses, pièces uniques, grès, Séverine" />
+  <meta name="author" content="Pottery by Séverine" />
+  <link rel="canonical" href="https://www.potterybyseverine.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pottery by Séverine" />
+  <meta property="og:title" content="Pottery by Séverine — Céramique artisanale & pièces uniques" />
+  <meta property="og:description" content="Des céramiques façonnées à la main, terreuses et intemporelles. Vases, bols, tasses, assiettes et pièces uniques." />
+  <meta property="og:image" content="assets/images/banner.jpeg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://www.potterybyseverine.fr/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pottery by Séverine — Céramique artisanale" />
+  <meta name="twitter:description" content="Des céramiques façonnées à la main, terreuses et intemporelles." />
+  <meta name="twitter:image" content="assets/images/banner.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/logos/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.potterybyseverine.fr/#business",
+    "name": "Pottery by Séverine",
+    "description": "Atelier de céramique artisanale — vases, bols, tasses, assiettes et pièces uniques façonnés à la main.",
+    "image": "https://www.potterybyseverine.fr/assets/images/banner.jpeg",
+    "logo": "https://www.potterybyseverine.fr/assets/logos/logo-badge.svg",
+    "url": "https://www.potterybyseverine.fr/",
+    "email": "bonjour@potterybyseverine.fr",
+    "telephone": "+33 6 12 34 56 78",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue des Potiers",
+      "addressLocality": "Aix-en-Provence",
+      "postalCode": "13100",
+      "addressCountry": "FR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/potterybyseverine"
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "category": "Céramique artisanale"
+      }
+    }
+  }
+  </script>
+</head>
+
+<body id="accueil">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header site-header--hero">
+    <div class="header__inner">
+      <a class="brand" href="#accueil" aria-label="Pottery by Séverine — accueil">
+        <img class="brand__mark" src="assets/logos/logo-icon.svg" alt="" width="42" height="42" aria-hidden="true" />
+        <span class="brand__text">
+          <span class="brand__name">Séverine</span>
+          <span class="brand__tagline">Pottery · Céramique</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link is-active" href="#accueil">Accueil</a></li>
+          <li class="nav__item"><a class="nav__link" href="#univers">L'univers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#creations">Les créations</a></li>
+          <li class="nav__item"><a class="nav__link" href="#savoir-faire">Le savoir-faire</a></li>
+          <li class="nav__item"><a class="nav__link" href="galerie.html">Galerie</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+          <li class="nav__item">
+            <a class="nav__ig" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" aria-label="Instagram (nouvelle fenêtre)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= ① HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media parallax">
+        <img src="assets/images/banner.jpeg" alt="Étagère d'atelier garnie de céramiques faites main et de plantes vertes" fetchpriority="high" />
+      </div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="overline">Atelier de céramique artisanale</span>
+          <h1 class="hero__title" id="hero-title">La terre, façonnée <em>à la main</em>, une pièce à la fois.</h1>
+          <p class="hero__subtitle">Des céramiques douces et terreuses, nées de la lenteur du geste. Chaque objet est unique — imparfait, vivant, intemporel.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#creations">
+              Découvrir les créations
+              <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--light" href="galerie.html">Voir la galerie</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#univers" aria-label="Descendre vers la section suivante">
+        <span class="scroll-indicator__mouse"><span class="scroll-indicator__wheel"></span></span>
+        <span>Explorer</span>
+      </a>
+    </section>
+
+    <!-- ======================= ② L'UNIVERS ======================= -->
+    <section class="section section--paper" id="univers" aria-labelledby="univers-title">
+      <div class="container univers">
+        <div class="univers__grid">
+          <div class="univers__portrait" data-reveal="left">
+            <div class="univers__portrait-frame">
+              <img src="assets/images/pot-1.jpeg" alt="Vase en grès crème orné de fleurs modelées à la main, posé sur une étagère en bois" loading="lazy" />
+            </div>
+            <div class="univers__stamp" aria-hidden="true">
+              <img src="assets/logos/logo-badge.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="univers__text" data-reveal="right">
+            <span class="overline">L'univers de Séverine</span>
+            <h2 class="section__title" id="univers-title">Un atelier où le temps<br />ralentit&nbsp;doucement.</h2>
+            <p class="lead">Séverine travaille l'argile comme on écrit une histoire : lentement, avec attention. Née d'une envie de matière et de silence, chaque pièce porte la trace de la main qui l'a façonnée.</p>
+            <p>Ici, rien n'est pressé. La terre est pétrie, tournée, séchée, cuite puis émaillée au fil des semaines. Les irrégularités ne sont pas des défauts : ce sont des signatures. Des objets pensés pour durer, pour accompagner le quotidien et vieillir avec grâce.</p>
+
+            <div class="values">
+              <div class="value" data-reveal data-delay="1">
+                <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3c2.5 3 4 5.5 4 8a4 4 0 0 1-8 0c0-2.5 1.5-5 4-8Z"/><path d="M8 20h8"/></svg>
+                <h3 class="value__title">Fait main</h3>
+                <p class="value__text">Chaque pièce est façonnée individuellement, sans moule industriel.</p>
+              </div>
+              <div class="value" data-reveal data-delay="2">
+                <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 7v5l3 2"/></svg>
+                <h3 class="value__title">Le temps long</h3>
+                <p class="value__text">Le geste lent, la cuisson patiente, la matière respectée.</p>
+              </div>
+              <div class="value" data-reveal data-delay="3">
+                <svg class="value__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10Z"/></svg>
+                <h3 class="value__title">Matières naturelles</h3>
+                <p class="value__text">Argiles, grès et émaux aux teintes terreuses et minérales.</p>
+              </div>
+            </div>
+
+            <p class="univers__signature accent-serif">Séverine
+              <span class="univers__signature-role">Céramiste — fondatrice de l'atelier</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ③ LES CRÉATIONS ======================= -->
+    <section class="section" id="creations" aria-labelledby="creations-title">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="overline overline--center" data-reveal="fade">Les collections</span>
+          <h2 class="section__title" id="creations-title" data-reveal>Six familles de créations</h2>
+          <p class="lead" data-reveal data-delay="1">Du vase généreux à la pièce sculpturale, chaque catégorie explore une manière différente d'habiter la matière. Cliquez pour découvrir toute la collection.</p>
+        </div>
+
+        <div class="creations__grid">
+          <a class="creation-card" href="galerie.html?filter=vases" data-reveal data-delay="1" aria-label="Découvrir les vases">
+            <img class="creation-card__img" src="assets/images/pot-1.jpeg" alt="Vase en grès crème décoré de fleurs modelées" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">01</span>
+              <span class="creation-card__name">Vases</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="creation-card" href="galerie.html?filter=bols" data-reveal data-delay="2" aria-label="Découvrir les bols">
+            <img class="creation-card__img" src="assets/images/pot-2.jpeg" alt="Deux petits contenants en grès émaillé gris et sable" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">02</span>
+              <span class="creation-card__name">Bols</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="creation-card" href="galerie.html?filter=tasses" data-reveal data-delay="3" aria-label="Découvrir les tasses">
+            <img class="creation-card__img" src="assets/images/mug-one-piece.jpeg" alt="Mug en céramique noire peint d'une tête de mort au chapeau de paille" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">03</span>
+              <span class="creation-card__name">Tasses</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="creation-card" href="galerie.html?filter=assiettes" data-reveal data-delay="1" aria-label="Découvrir les assiettes">
+            <img class="creation-card__img" src="assets/images/plateau-1.jpeg" alt="Plateau rectangulaire en céramique blanche à bordure ajourée" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">04</span>
+              <span class="creation-card__name">Assiettes</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="creation-card" href="galerie.html?filter=decoration" data-reveal data-delay="2" aria-label="Découvrir la décoration">
+            <img class="creation-card__img" src="assets/images/panda.jpeg" alt="Petite figurine de panda en céramique assis, tenant une pomme de pin" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">05</span>
+              <span class="creation-card__name">Décoration</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="creation-card" href="galerie.html?filter=pieces-uniques" data-reveal data-delay="3" aria-label="Découvrir les pièces uniques">
+            <img class="creation-card__img" src="assets/images/poisson-1.jpeg" alt="Sculpture céramique en forme de poisson aux lèvres rouges et écailles vertes" loading="lazy" />
+            <span class="creation-card__overlay">
+              <span class="creation-card__index">06</span>
+              <span class="creation-card__name">Pièces uniques</span>
+              <span class="creation-card__cta">Explorer
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ④ LE SAVOIR-FAIRE ======================= -->
+    <section class="section section--clay" id="savoir-faire" aria-labelledby="savoir-title">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="overline overline--center" data-reveal="fade">Le geste</span>
+          <h2 class="section__title" id="savoir-title" data-reveal>De la terre à l'objet</h2>
+          <p class="lead" data-reveal data-delay="1">Six étapes, plusieurs semaines de patience. Voici le chemin que parcourt chaque pièce avant d'arriver entre vos mains.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="right">
+              <span class="timeline__num">Étape 01</span>
+              <h3 class="timeline__title">Préparation</h3>
+              <span class="timeline__text">La terre est pétrie et battue pour chasser les bulles d'air et l'assouplir.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 14c0-4 3.5-7 8-7s8 3 8 7"/><path d="M4 14h16"/><path d="M7 14v3M17 14v3"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="left">
+              <span class="timeline__num">Étape 02</span>
+              <h3 class="timeline__title">Tournage</h3>
+              <span class="timeline__text">Sur le tour, les mains guident la matière qui monte et prend forme.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="right">
+              <span class="timeline__num">Étape 03</span>
+              <h3 class="timeline__title">Modelage</h3>
+              <span class="timeline__text">Fleurs, anses et détails sont ajoutés à la main, un à un.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5c2 2 3 4 3 6a3 3 0 0 1-6 0c0-2 1-4 3-6Z"/><path d="M9 19h6"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="left">
+              <span class="timeline__num">Étape 04</span>
+              <h3 class="timeline__title">Séchage</h3>
+              <span class="timeline__text">La pièce repose lentement, à l'abri, jusqu'à devenir « cuir » puis sèche.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/><circle cx="12" cy="12" r="3.5"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="right">
+              <span class="timeline__num">Étape 05</span>
+              <h3 class="timeline__title">Cuisson</h3>
+              <span class="timeline__text">Le four monte à plus de 1000°C : la terre devient céramique, définitive.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c1.5 2 2 3.5 1 5 2 0 3 2 3 4a4 4 0 0 1-8 0c0-1.5.5-2.8 1.5-3.8C11 6.5 11 4.5 12 3Z"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+
+          <li class="timeline__step">
+            <div class="timeline__content" data-reveal="left">
+              <span class="timeline__num">Étape 06</span>
+              <h3 class="timeline__title">Émaillage</h3>
+              <span class="timeline__text">L'émail est posé puis recuit, révélant couleurs, brillances et matières.</span>
+            </div>
+            <span class="timeline__node" data-reveal="zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h12l-1 9a5 5 0 0 1-10 0Z"/><path d="M9 21h6M12 17v4"/></svg>
+            </span>
+            <div class="timeline__media"></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= ⑤ GALERIE (aperçu) ======================= -->
+    <section class="section" id="galerie" aria-labelledby="galerie-title">
+      <div class="container container--wide">
+        <div class="section__head section__head--center">
+          <span class="overline overline--center" data-reveal="fade">Un aperçu</span>
+          <h2 class="section__title" id="galerie-title" data-reveal>Quelques pièces mises en lumière</h2>
+        </div>
+
+        <div class="gallery-preview__grid">
+          <figure class="gallery-preview__item gallery-preview__item--tall" data-reveal data-delay="1">
+            <img src="assets/images/pot-3.jpeg" alt="Vase en grès crème couvert de pastilles vertes à cœur noir" loading="lazy" />
+          </figure>
+          <figure class="gallery-preview__item" data-reveal data-delay="2">
+            <img src="assets/images/pot-2.jpeg" alt="Duo de contenants rayés en grès émaillé gris et sable" loading="lazy" />
+          </figure>
+          <figure class="gallery-preview__item gallery-preview__item--wide" data-reveal data-delay="3">
+            <img src="assets/images/banner.jpeg" alt="Composition de céramiques et de plantes sur une étagère en bois" loading="lazy" />
+          </figure>
+          <figure class="gallery-preview__item" data-reveal data-delay="2">
+            <img src="assets/images/panda.jpeg" alt="Figurine de panda en céramique" loading="lazy" />
+          </figure>
+          <figure class="gallery-preview__item gallery-preview__item--tall" data-reveal data-delay="3">
+            <img src="assets/images/poisson-1.jpeg" alt="Sculpture poisson en céramique aux lèvres rouges" loading="lazy" />
+          </figure>
+          <figure class="gallery-preview__item" data-reveal data-delay="1">
+            <img src="assets/images/plateau-1.jpeg" alt="Plateau ajouré en céramique blanche" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="gallery-preview__cta" data-reveal="fade">
+          <a class="btn btn--ghost" href="galerie.html">
+            Voir toute la galerie
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ⑥ TÉMOIGNAGES ======================= -->
+    <section class="section section--sand" aria-labelledby="temoignages-title">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="overline overline--center" data-reveal="fade">Elles en parlent</span>
+          <h2 class="section__title" id="temoignages-title" data-reveal>Des objets que l'on garde</h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <figure class="testimonial" data-reveal data-delay="1">
+            <span class="testimonial__quote-mark" aria-hidden="true">“</span>
+            <blockquote class="testimonial__text">Mon bol du matin est devenu un petit rituel. On sent la main derrière chaque courbe — rien à voir avec de l'industriel.</blockquote>
+            <div class="stars" aria-label="Note : 5 sur 5">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+            </div>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__name">Camille R.</span>
+              <span class="testimonial__meta">Aix-en-Provence</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial" data-reveal data-delay="2">
+            <span class="testimonial__quote-mark" aria-hidden="true">“</span>
+            <blockquote class="testimonial__text">J'ai offert un vase pour un mariage. La pièce était unique, emballée avec un soin fou. Un cadeau qui a marqué.</blockquote>
+            <div class="stars" aria-label="Note : 5 sur 5">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+            </div>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__name">Léa M.</span>
+              <span class="testimonial__meta">Lyon</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial" data-reveal data-delay="3">
+            <span class="testimonial__quote-mark" aria-hidden="true">“</span>
+            <blockquote class="testimonial__text">Séverine a créé un service sur mesure pour notre restaurant. Chaque assiette raconte quelque chose. Nos clients adorent.</blockquote>
+            <div class="stars" aria-label="Note : 5 sur 5">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.7-4.9 4.5 1.3 6.6L12 17.8 6.1 20l1.3-6.6L2.5 8.9l6.6-.7Z"/></svg>
+            </div>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__name">Thomas & Inès</span>
+              <span class="testimonial__meta">Restaurant Le Jardin</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ⑦ INSTAGRAM ======================= -->
+    <section class="section section--paper" id="instagram" aria-labelledby="instagram-title">
+      <div class="container container--wide">
+        <div class="instagram__head">
+          <div>
+            <span class="overline" data-reveal="fade">@potterybyseverine</span>
+            <h2 class="section__title" id="instagram-title" data-reveal>Suivez l'atelier au quotidien</h2>
+            <p class="lead" data-reveal data-delay="1">Coulisses, cuissons, nouvelles pièces et fournées du four : la vie de l'atelier se raconte jour après jour sur Instagram.</p>
+          </div>
+          <a class="btn btn--primary" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal="fade">
+            Suivre sur Instagram
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="instagram__grid">
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="1" aria-label="Voir sur Instagram">
+            <img src="assets/images/pot-1.jpeg" alt="Vase fleuri en grès crème" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="2" aria-label="Voir sur Instagram">
+            <img src="assets/images/pot-3.jpeg" alt="Vase à pastilles vertes" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="3" aria-label="Voir sur Instagram">
+            <img src="assets/images/mug-one-piece.jpeg" alt="Mug noir décoré à la main" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="4" aria-label="Voir sur Instagram">
+            <img src="assets/images/plateau-1.jpeg" alt="Plateau ajouré en céramique blanche" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="5" aria-label="Voir sur Instagram">
+            <img src="assets/images/poisson-1.jpeg" alt="Sculpture poisson en céramique" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="instagram__item" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" data-reveal data-delay="6" aria-label="Voir sur Instagram">
+            <img src="assets/images/panda.jpeg" alt="Figurine panda en céramique" loading="lazy" />
+            <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ⑧ CONTACT ======================= -->
+    <section class="section section--sand" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="overline overline--center" data-reveal="fade">Écrivez-moi</span>
+          <h2 class="section__title" id="contact-title" data-reveal>Une envie, une commande, un projet ?</h2>
+          <p class="lead" data-reveal data-delay="1">Pièces sur mesure, listes de mariage, collaborations ou simple bonjour — je réponds avec plaisir à chaque message.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__intro" data-reveal="left">
+            <div class="contact__details">
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16v12H4Z"/><path d="m4 7 8 6 8-6"/></svg>
+                </span>
+                <span>
+                  <span class="contact__detail-label">Email</span><br />
+                  <a class="contact__detail-value" href="mailto:bonjour@potterybyseverine.fr">bonjour@potterybyseverine.fr</a>
+                </span>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 18l-1 2a2 2 0 0 1-2 1 16 16 0 0 1-14-14 2 2 0 0 1 1-2Z"/></svg>
+                </span>
+                <span>
+                  <span class="contact__detail-label">Téléphone</span><br />
+                  <a class="contact__detail-value" href="tel:+33612345678">06 12 34 56 78</a>
+                </span>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                </span>
+                <span>
+                  <span class="contact__detail-label">Atelier</span><br />
+                  <span class="contact__detail-value">12 rue des Potiers, Aix-en-Provence</span>
+                </span>
+              </div>
+            </div>
+            <p>L'atelier se visite sur rendez-vous. N'hésitez pas à passer découvrir les pièces disponibles et échanger autour de la terre.</p>
+          </div>
+
+          <form class="form" data-reveal="right" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Votre nom" />
+              </div>
+              <div class="field">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Optionnel" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Parlez-moi de votre projet…"></textarea>
+            </div>
+            <button class="btn btn--primary form__submit" type="submit">
+              Envoyer le message
+              <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form__note">Réponse sous 48h — vos données restent confidentielles.</p>
+            <p class="form__feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact__map" data-reveal="fade">
+          <iframe
+            title="Localisation de l'atelier Pottery by Séverine à Aix-en-Provence"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=5.428%2C43.518%2C5.468%2C43.538&amp;layer=mapnik&amp;marker=43.528%2C5.448"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#accueil" aria-label="Pottery by Séverine — accueil">
+            <img class="brand__mark" src="assets/logos/logo-icon.svg" alt="" width="42" height="42" aria-hidden="true" />
+            <span class="brand__text">
+              <span class="brand__name">Séverine</span>
+              <span class="brand__tagline">Pottery · Céramique</span>
+            </span>
+          </a>
+          <p class="footer__about">Atelier de céramique artisanale. Des pièces façonnées à la main, terreuses et intemporelles, pensées pour durer.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navigation du site">
+          <h4>Le site</h4>
+          <div class="footer__links">
+            <a href="#univers">L'univers</a>
+            <a href="#creations">Les créations</a>
+            <a href="#savoir-faire">Le savoir-faire</a>
+            <a href="galerie.html">La galerie</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <nav class="footer__col" aria-label="Les collections">
+          <h4>Les collections</h4>
+          <div class="footer__links">
+            <a href="galerie.html?filter=vases">Vases</a>
+            <a href="galerie.html?filter=bols">Bols</a>
+            <a href="galerie.html?filter=tasses">Tasses</a>
+            <a href="galerie.html?filter=assiettes">Assiettes</a>
+            <a href="galerie.html?filter=pieces-uniques">Pièces uniques</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Pottery by Séverine — Fait main avec patience.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="mailto:bonjour@potterybyseverine.fr" aria-label="Envoyer un email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16v12H4Z"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

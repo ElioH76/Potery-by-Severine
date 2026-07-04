@@ -1,0 +1,5 @@
+# Fichiers sources non nécessaires au site déployé
+# (les logos et photos utilisés sont déjà copiés dans assets/)
+design_handoff_brand_identity/
+images/
+.claude/

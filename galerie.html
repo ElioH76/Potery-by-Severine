@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F1E5D3" />
+
+  <!-- SEO -->
+  <title>Galerie — Pottery by Séverine · Céramiques faites main</title>
+  <meta name="description" content="Découvrez toute la collection de céramiques de Séverine : vases, bols, tasses, assiettes, décoration et pièces uniques. Chaque objet est façonné à la main." />
+  <link rel="canonical" href="https://www.potterybyseverine.fr/galerie.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pottery by Séverine" />
+  <meta property="og:title" content="Galerie — Pottery by Séverine" />
+  <meta property="og:description" content="Toute la collection de céramiques faites main : vases, bols, tasses, assiettes, décoration et pièces uniques." />
+  <meta property="og:image" content="assets/images/pot-3.jpeg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://www.potterybyseverine.fr/galerie.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo-icon.svg" />
+  <link rel="apple-touch-icon" href="assets/logos/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Schema.org : fil d'Ariane -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.potterybyseverine.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Galerie", "item": "https://www.potterybyseverine.fr/galerie.html" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#galerie-main">Aller au contenu principal</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header is-scrolled">
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="Pottery by Séverine — accueil">
+        <img class="brand__mark" src="assets/logos/logo-icon.svg" alt="" width="42" height="42" aria-hidden="true" />
+        <span class="brand__text">
+          <span class="brand__name">Séverine</span>
+          <span class="brand__tagline">Pottery · Céramique</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html#accueil">Accueil</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html#univers">L'univers</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html#creations">Les créations</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html#savoir-faire">Le savoir-faire</a></li>
+          <li class="nav__item"><a class="nav__link is-active" href="galerie.html">Galerie</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></li>
+          <li class="nav__item">
+            <a class="nav__ig" href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" aria-label="Instagram (nouvelle fenêtre)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="galerie-main">
+    <!-- ---- En-tête ---- -->
+    <section class="gallery-hero">
+      <div class="container">
+        <span class="overline overline--center">La collection complète</span>
+        <h1 class="display">La galerie</h1>
+        <p class="lead">Chaque pièce est façonnée, cuite et émaillée à la main dans l'atelier. Filtrez par famille et cliquez pour agrandir.</p>
+      </div>
+    </section>
+
+    <!-- ---- Filtres ---- -->
+    <div class="filters" role="group" aria-label="Filtrer les créations par catégorie">
+      <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+      <button class="filter-btn" type="button" data-filter="vases" aria-pressed="false">Vases</button>
+      <button class="filter-btn" type="button" data-filter="bols" aria-pressed="false">Bols</button>
+      <button class="filter-btn" type="button" data-filter="tasses" aria-pressed="false">Tasses</button>
+      <button class="filter-btn" type="button" data-filter="assiettes" aria-pressed="false">Assiettes</button>
+      <button class="filter-btn" type="button" data-filter="decoration" aria-pressed="false">Décoration</button>
+      <button class="filter-btn" type="button" data-filter="pieces-uniques" aria-pressed="false">Pièces uniques</button>
+    </div>
+
+    <!-- ---- Masonry ---- -->
+    <div class="container container--wide">
+      <div class="masonry">
+
+        <figure class="masonry__item" data-category="vases pieces-uniques" data-cat-label="Vase" data-name="Floraison"
+                data-full="assets/images/pot-1.jpeg" tabindex="0" role="button" aria-label="Agrandir : Floraison, vase">
+          <img src="assets/images/pot-1.jpeg" alt="Vase en grès crème orné de fleurs modelées vertes et anthracite" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Vase</span>
+            <span class="masonry__name">Floraison</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="tasses bols" data-cat-label="Grès émaillé" data-name="Duo Rayé"
+                data-full="assets/images/pot-2.jpeg" tabindex="0" role="button" aria-label="Agrandir : Duo Rayé">
+          <img src="assets/images/pot-2.jpeg" alt="Deux petits contenants en grès émaillé gris souligné d'un liseré sable" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Grès émaillé</span>
+            <span class="masonry__name">Duo Rayé</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="vases decoration pieces-uniques" data-cat-label="Vase" data-name="Pastille"
+                data-full="assets/images/pot-3.jpeg" tabindex="0" role="button" aria-label="Agrandir : Pastille, vase">
+          <img src="assets/images/pot-3.jpeg" alt="Vase crème couvert de pastilles rondes vertes à cœur noir" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Vase</span>
+            <span class="masonry__name">Pastille</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="tasses pieces-uniques" data-cat-label="Tasse" data-name="Mug Corsaire"
+                data-full="assets/images/mug-one-piece.jpeg" tabindex="0" role="button" aria-label="Agrandir : Mug Corsaire">
+          <img src="assets/images/mug-one-piece.jpeg" alt="Mug en céramique noire peint d'une tête de mort au chapeau de paille" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Tasse</span>
+            <span class="masonry__name">Mug Corsaire</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="assiettes decoration" data-cat-label="Assiette" data-name="Dentelle"
+                data-full="assets/images/plateau-1.jpeg" tabindex="0" role="button" aria-label="Agrandir : Dentelle, plateau">
+          <img src="assets/images/plateau-1.jpeg" alt="Plateau rectangulaire en céramique blanche à large bordure ajourée" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Assiette</span>
+            <span class="masonry__name">Dentelle</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="decoration pieces-uniques" data-cat-label="Pièce unique" data-name="Poisson Lippu"
+                data-full="assets/images/poisson-1.jpeg" tabindex="0" role="button" aria-label="Agrandir : Poisson Lippu">
+          <img src="assets/images/poisson-1.jpeg" alt="Sculpture céramique en forme de poisson aux lèvres rouges et écailles vertes" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Pièce unique</span>
+            <span class="masonry__name">Poisson Lippu</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="decoration pieces-uniques" data-cat-label="Pièce unique" data-name="Petit Panda"
+                data-full="assets/images/panda.jpeg" tabindex="0" role="button" aria-label="Agrandir : Petit Panda">
+          <img src="assets/images/panda.jpeg" alt="Petite figurine de panda en céramique assis, tenant une pomme de pin" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Pièce unique</span>
+            <span class="masonry__name">Petit Panda</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+        <figure class="masonry__item" data-category="decoration" data-cat-label="Composition" data-name="Étagère d'atelier"
+                data-full="assets/images/banner.jpeg" tabindex="0" role="button" aria-label="Agrandir : Étagère d'atelier">
+          <img src="assets/images/banner.jpeg" alt="Composition de plusieurs céramiques faites main et de plantes sur une étagère en bois" loading="lazy" />
+          <figcaption class="masonry__overlay">
+            <span class="masonry__cat">Composition</span>
+            <span class="masonry__name">Étagère d'atelier</span>
+          </figcaption>
+          <span class="masonry__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        </figure>
+
+      </div>
+
+      <p class="masonry-empty">Aucune pièce dans cette catégorie pour le moment.</p>
+    </div>
+
+    <!-- ---- Retour accueil ---- -->
+    <div class="gallery-back">
+      <a class="btn btn--ghost" href="index.html">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" style="transform:scaleX(-1)"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        Retour à l'accueil
+      </a>
+    </div>
+  </main>
+
+  <!-- ---- Lightbox ---- -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'image" aria-hidden="true">
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Fermer (Échap)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Image précédente (flèche gauche)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Image suivante (flèche droite)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+
+    <div class="lightbox__stage">
+      <div class="lightbox__figure">
+        <img class="lightbox__img" src="" alt="" style="transition: opacity .35s ease;" />
+      </div>
+      <div class="lightbox__caption">
+        <span class="lightbox__cat"></span>
+        <div class="lightbox__name"></div>
+        <div class="lightbox__counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="Pottery by Séverine — accueil">
+            <img class="brand__mark" src="assets/logos/logo-icon.svg" alt="" width="42" height="42" aria-hidden="true" />
+            <span class="brand__text">
+              <span class="brand__name">Séverine</span>
+              <span class="brand__tagline">Pottery · Céramique</span>
+            </span>
+          </a>
+          <p class="footer__about">Atelier de céramique artisanale. Des pièces façonnées à la main, terreuses et intemporelles, pensées pour durer.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navigation du site">
+          <h4>Le site</h4>
+          <div class="footer__links">
+            <a href="index.html#univers">L'univers</a>
+            <a href="index.html#creations">Les créations</a>
+            <a href="index.html#savoir-faire">Le savoir-faire</a>
+            <a href="galerie.html">La galerie</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </nav>
+
+        <nav class="footer__col" aria-label="Les collections">
+          <h4>Les collections</h4>
+          <div class="footer__links">
+            <a href="galerie.html?filter=vases">Vases</a>
+            <a href="galerie.html?filter=bols">Bols</a>
+            <a href="galerie.html?filter=tasses">Tasses</a>
+            <a href="galerie.html?filter=assiettes">Assiettes</a>
+            <a href="galerie.html?filter=pieces-uniques">Pièces uniques</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Pottery by Séverine — Fait main avec patience.</p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/potterybyseverine" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="mailto:bonjour@potterybyseverine.fr" aria-label="Envoyer un email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16v12H4Z"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/gallery.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <path id="arcTop" d="M34,100 A66,66 0 0 1 166,100" fill="none"></path>
+    <path id="arcBot" d="M36,100 A64,64 0 0 0 164,100" fill="none"></path>
+  </defs>
+  
+  <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#5A4331">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">POTTERY BY</textPath>
+  </text>
+  <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#5A4331">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">SÉVERINE</textPath>
+  </text>
+  <circle cx="29" cy="100" r="2.4" fill="#B65C39"></circle>
+  <circle cx="171" cy="100" r="2.4" fill="#B65C39"></circle>
+  
+  <g transform="translate(59,62) scale(0.82)">
+    <path d="M43,42 C43,52 27,59 27,74 C27,89 37,96 50,96 C63,96 73,89 73,74 C73,59 57,52 57,42 Z" fill="#B65C39"></path>
+    <g fill="#5A4331">
+      <path d="M49,42 C49,34 49,25 50.6,17 L53.4,17 C51.8,25 51,34 51,42 Z"></path>
+      <path d="M49.5,34 C43,33 39.5,25.5 44,22 C48.5,25 51,29 49.5,34 Z"></path>
+      <path d="M51.5,25 C58,24.5 61.5,17.5 57,14.5 C52.5,17.5 50,22 51.5,25 Z"></path>
+      <path d="M52.5,16.5 C48.5,12.5 49,5 53,3.5 C57,5 57.5,12.5 52.5,16.5 Z"></path>
+    </g>
+  </g>
+</svg>

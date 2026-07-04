@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<meta name="design_doc_mode" content="canvas">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+</style>
+</helmet>
+
+<div style="--cream:#F1E5D3; --paper:#FBF5EB; --terra:#B65C39; --terraSoft:#CE8A5F; --ocre:#C89A46; --clay:#5A4331; --clayLight:#7A6250; --sand:#E4D2B8; background:#F1E5D3; min-height:100%; padding:80px 72px 120px; font-family:'Jost',sans-serif; color:#5A4331;">
+
+  <!-- ===== symbol defs ===== -->
+  <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+    <defs>
+      <symbol id="vaseSolid" viewBox="0 0 100 100">
+        <path d="M43,42 C43,52 27,59 27,74 C27,89 37,96 50,96 C63,96 73,89 73,74 C73,59 57,52 57,42 Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="vaseLine" viewBox="0 0 100 100">
+        <path d="M43,42 C43,52 27,59 27,74 C27,89 37,96 50,96 C63,96 73,89 73,74 C73,59 57,52 57,42 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+        <path d="M43,42 L57,42" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="flowerSolid" viewBox="0 0 100 100" fill="currentColor">
+        <path d="M49,42 C49,34 49,25 50.6,17 L53.4,17 C51.8,25 51,34 51,42 Z"/>
+        <path d="M49.5,34 C43,33 39.5,25.5 44,22 C48.5,25 51,29 49.5,34 Z"/>
+        <path d="M51.5,25 C58,24.5 61.5,17.5 57,14.5 C52.5,17.5 50,22 51.5,25 Z"/>
+        <path d="M52.5,16.5 C48.5,12.5 49,5 53,3.5 C57,5 57.5,12.5 52.5,16.5 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== header ===== -->
+  <div style="max-width:1180px; margin:0 auto 72px; display:flex; align-items:flex-end; justify-content:space-between; gap:40px; border-bottom:1px solid #D6C2A4; padding-bottom:32px;">
+    <div>
+      <div style="font-size:13px; letter-spacing:0.42em; text-transform:uppercase; color:#B65C39; margin-bottom:18px;">Identité visuelle · Céramique</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-size:62px; line-height:0.95; color:#5A4331; font-weight:500;">Pottery by Séverine</div>
+    </div>
+    <div style="font-size:13px; letter-spacing:0.06em; color:#7A6250; text-align:right; max-width:240px; line-height:1.7;">Argile · grès · céramique<br>fait main</div>
+  </div>
+
+  <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:64px;">
+
+    <!-- ===== 01 logo principal ===== -->
+    <section>
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px;">
+        <span style="font-size:12px; letter-spacing:0.3em; color:#B65C39;">01</span>
+        <span style="font-size:13px; letter-spacing:0.28em; text-transform:uppercase; color:#7A6250;">Logo principal</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:20px;">
+        <div style="background:#FBF5EB; border-radius:14px; padding:56px; display:flex; align-items:center; justify-content:center; min-height:420px;">
+          <svg viewBox="0 0 200 200" width="330" height="330">
+            <defs>
+              <path id="arcTop" d="M34,100 A66,66 0 0 1 166,100" fill="none"/>
+              <path id="arcBot" d="M36,100 A64,64 0 0 0 164,100" fill="none"/>
+            </defs>
+            <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#5A4331">
+              <textPath href="#arcTop" startOffset="50%" text-anchor="middle">POTTERY BY</textPath>
+            </text>
+            <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#5A4331">
+              <textPath href="#arcBot" startOffset="50%" text-anchor="middle">SÉVERINE</textPath>
+            </text>
+            <circle cx="29" cy="100" r="2.4" fill="#B65C39"/>
+            <circle cx="171" cy="100" r="2.4" fill="#B65C39"/>
+            <use href="#vaseSolid" x="59" y="62" width="82" height="82" style="color:#B65C39"/>
+            <use href="#flowerSolid" x="59" y="62" width="82" height="82" style="color:#5A4331"/>
+          </svg>
+        </div>
+        <div style="background:#5A4331; border-radius:14px; padding:56px; display:flex; align-items:center; justify-content:center; min-height:420px;">
+          <svg viewBox="0 0 200 200" width="330" height="330">
+            <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#F1E5D3">
+              <textPath href="#arcTop" startOffset="50%" text-anchor="middle">POTTERY BY</textPath>
+            </text>
+            <text font-family="Jost, sans-serif" font-size="15.5" font-weight="400" letter-spacing="5.5" fill="#F1E5D3">
+              <textPath href="#arcBot" startOffset="50%" text-anchor="middle">SÉVERINE</textPath>
+            </text>
+            <circle cx="29" cy="100" r="2.4" fill="#CE8A5F"/>
+            <circle cx="171" cy="100" r="2.4" fill="#CE8A5F"/>
+            <use href="#vaseSolid" x="59" y="62" width="82" height="82" style="color:#C89A46"/>
+            <use href="#flowerSolid" x="59" y="62" width="82" height="82" style="color:#F1E5D3"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 déclinaisons ===== -->
+    <section>
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px;">
+        <span style="font-size:12px; letter-spacing:0.3em; color:#B65C39;">02</span>
+        <span style="font-size:13px; letter-spacing:0.28em; text-transform:uppercase; color:#7A6250;">Déclinaisons</span>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+
+        <!-- horizontal lockup -->
+        <div style="grid-column:span 2; background:#FBF5EB; border-radius:14px; padding:44px 52px; display:flex; align-items:center; gap:36px; min-height:210px;">
+          <svg viewBox="0 0 100 100" width="120" height="120">
+            <use href="#vaseSolid" x="0" y="0" width="100" height="100" style="color:#B65C39"/>
+            <use href="#flowerSolid" x="0" y="0" width="100" height="100" style="color:#5A4331"/>
+          </svg>
+          <div style="border-left:1px solid #D6C2A4; padding-left:34px;">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:40px; line-height:1; color:#5A4331; font-weight:500;">Séverine</div>
+            <div style="font-size:12.5px; letter-spacing:0.34em; text-transform:uppercase; color:#B65C39; margin-top:10px;">Pottery&nbsp;·&nbsp;Céramique</div>
+          </div>
+        </div>
+
+        <!-- icon only -->
+        <div style="background:#B65C39; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; min-height:210px;">
+          <svg viewBox="0 0 100 100" width="130" height="130">
+            <use href="#vaseSolid" x="0" y="0" width="100" height="100" style="color:#F1E5D3"/>
+            <use href="#flowerSolid" x="0" y="0" width="100" height="100" style="color:#5A4331"/>
+          </svg>
+        </div>
+
+        <!-- monogram -->
+        <div style="background:#FBF5EB; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; min-height:210px;">
+          <div style="width:132px; height:132px; border-radius:50%; border:1.5px solid #C89A46; display:flex; align-items:center; justify-content:center; position:relative;">
+            <span style="font-family:'Cormorant Garamond',serif; font-size:80px; color:#B65C39; line-height:1; margin-top:6px;">S</span>
+            <span style="position:absolute; bottom:16px; font-size:8.5px; letter-spacing:0.3em; color:#7A6250;">POTTERY</span>
+          </div>
+        </div>
+
+        <!-- stamp / tampon -->
+        <div style="background:#E4D2B8; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; min-height:210px;">
+          <svg viewBox="0 0 200 200" width="150" height="150">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#5A4331" stroke-width="2"/>
+            <text font-family="Jost, sans-serif" font-size="14" font-weight="400" letter-spacing="4.5" fill="#5A4331">
+              <textPath href="#arcTop" startOffset="50%" text-anchor="middle">POTTERY BY</textPath>
+            </text>
+            <text font-family="Jost, sans-serif" font-size="14" font-weight="400" letter-spacing="4.5" fill="#5A4331">
+              <textPath href="#arcBot" startOffset="50%" text-anchor="middle">SÉVERINE</textPath>
+            </text>
+            <use href="#vaseLine" x="61" y="60" width="78" height="78" style="color:#5A4331"/>
+            <use href="#flowerSolid" x="61" y="60" width="78" height="78" style="color:#5A4331"/>
+          </svg>
+        </div>
+
+        <!-- single line small -->
+        <div style="background:#FBF5EB; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; min-height:210px;">
+          <svg viewBox="0 0 100 100" width="120" height="120">
+            <use href="#vaseLine" x="2" y="2" width="96" height="96" style="color:#5A4331"/>
+            <use href="#flowerSolid" x="2" y="2" width="96" height="96" style="color:#C89A46"/>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 03 palette + typo ===== -->
+    <section>
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px;">
+        <span style="font-size:12px; letter-spacing:0.3em; color:#B65C39;">03</span>
+        <span style="font-size:13px; letter-spacing:0.28em; text-transform:uppercase; color:#7A6250;">Palette & typographie</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+        <div style="background:#FBF5EB; border-radius:14px; padding:40px; display:flex; flex-direction:column; gap:18px;">
+          <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:12px;">
+            <div><div style="height:78px; border-radius:9px; background:#B65C39;"></div><div style="font-size:11px; margin-top:9px; color:#7A6250;">Terracotta<br>#B65C39</div></div>
+            <div><div style="height:78px; border-radius:9px; background:#C89A46;"></div><div style="font-size:11px; margin-top:9px; color:#7A6250;">Ocre<br>#C89A46</div></div>
+            <div><div style="height:78px; border-radius:9px; background:#5A4331;"></div><div style="font-size:11px; margin-top:9px; color:#7A6250;">Argile<br>#5A4331</div></div>
+            <div><div style="height:78px; border-radius:9px; background:#E4D2B8;"></div><div style="font-size:11px; margin-top:9px; color:#7A6250;">Sable<br>#E4D2B8</div></div>
+            <div><div style="height:78px; border-radius:9px; background:#F1E5D3; border:1px solid #E0CFB4;"></div><div style="font-size:11px; margin-top:9px; color:#7A6250;">Crème<br>#F1E5D3</div></div>
+          </div>
+        </div>
+        <div style="background:#FBF5EB; border-radius:14px; padding:40px;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:46px; color:#5A4331; line-height:1;">Cormorant Garamond</div>
+          <div style="font-size:12px; letter-spacing:0.06em; color:#7A6250; margin:8px 0 26px;">Titres & nom — élégant, artisanal</div>
+          <div style="font-family:'Jost',sans-serif; font-size:19px; letter-spacing:0.28em; color:#5A4331; text-transform:uppercase;">Jost · Espacé</div>
+          <div style="font-size:12px; letter-spacing:0.06em; color:#7A6250; margin-top:8px;">Texte courant & libellés</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 applications ===== -->
+    <section>
+      <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px;">
+        <span style="font-size:12px; letter-spacing:0.3em; color:#B65C39;">04</span>
+        <span style="font-size:13px; letter-spacing:0.28em; text-transform:uppercase; color:#7A6250;">Applications</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:20px;">
+
+        <!-- business card -->
+        <div style="background:#FBF5EB; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; min-height:300px;">
+          <div style="width:360px; height:210px; background:#B65C39; border-radius:10px; padding:26px 30px; color:#F1E5D3; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 16px 30px rgba(90,67,49,0.28);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div style="font-family:'Cormorant Garamond',serif; font-size:32px; line-height:1;">Séverine</div>
+                <div style="font-size:9.5px; letter-spacing:0.32em; text-transform:uppercase; margin-top:8px; opacity:0.85;">Pottery · Céramiste</div>
+              </div>
+              <svg viewBox="0 0 100 100" width="46" height="46">
+                <use href="#vaseSolid" x="0" y="0" width="100" height="100" style="color:#F1E5D3"/>
+                <use href="#flowerSolid" x="0" y="0" width="100" height="100" style="color:#B65C39"/>
+              </svg>
+            </div>
+            <div style="font-size:10.5px; letter-spacing:0.08em; opacity:0.9; line-height:1.9;">@potterybyseverine<br>severine.ceramique@email.com</div>
+          </div>
+        </div>
+
+        <!-- instagram profile -->
+        <div style="background:#FBF5EB; border-radius:14px; padding:36px; display:flex; align-items:center; justify-content:center; min-height:300px;">
+          <div style="width:260px; text-align:center;">
+            <div style="width:96px; height:96px; border-radius:50%; margin:0 auto 16px; background:#F1E5D3; border:3px solid #C89A46; display:flex; align-items:center; justify-content:center;">
+              <svg viewBox="0 0 100 100" width="66" height="66">
+                <use href="#vaseSolid" x="0" y="0" width="100" height="100" style="color:#B65C39"/>
+                <use href="#flowerSolid" x="0" y="0" width="100" height="100" style="color:#5A4331"/>
+              </svg>
+            </div>
+            <div style="font-family:'Jost',sans-serif; font-size:15px; color:#5A4331; letter-spacing:0.02em;">potterybyseverine</div>
+            <div style="font-size:12px; color:#7A6250; margin-top:6px; line-height:1.6;">Céramique fait main 🌾<br>Pièces uniques en argile & grès</div>
+            <div style="display:flex; justify-content:center; gap:22px; margin-top:16px; font-size:12px; color:#5A4331;">
+              <span><b>128</b> pub.</span><span><b>2.4k</b> abo.</span><span><b>310</b> suivi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- product tag / étiquette -->
+        <div style="grid-column:span 2; background:#5A4331; border-radius:14px; padding:44px; display:flex; align-items:center; justify-content:center; gap:36px; min-height:230px;">
+          <div style="width:150px; height:190px; background:#F1E5D3; border-radius:8px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; box-shadow:0 14px 24px rgba(0,0,0,0.22);">
+            <div style="position:absolute; top:14px; width:14px; height:14px; border-radius:50%; border:2px solid #C89A46;"></div>
+            <svg viewBox="0 0 100 100" width="58" height="58" style="margin-top:14px;">
+              <use href="#vaseLine" x="2" y="2" width="96" height="96" style="color:#B65C39"/>
+              <use href="#flowerSolid" x="2" y="2" width="96" height="96" style="color:#5A4331"/>
+            </svg>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px; color:#5A4331;">Séverine</div>
+            <div style="font-size:8px; letter-spacing:0.26em; color:#7A6250;">FAIT MAIN</div>
+          </div>
+          <div style="width:150px; height:190px; background:#C89A46; border-radius:8px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; box-shadow:0 14px 24px rgba(0,0,0,0.22);">
+            <div style="position:absolute; top:14px; width:14px; height:14px; border-radius:50%; border:2px solid #FBF5EB;"></div>
+            <svg viewBox="0 0 100 100" width="58" height="58" style="margin-top:14px;">
+              <use href="#vaseSolid" x="0" y="0" width="100" height="100" style="color:#FBF5EB"/>
+              <use href="#flowerSolid" x="0" y="0" width="100" height="100" style="color:#5A4331"/>
+            </svg>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px; color:#FBF5EB;">Séverine</div>
+            <div style="font-size:8px; letter-spacing:0.26em; color:#5A4331;">CÉRAMIQUE</div>
+          </div>
+          <div style="color:#F1E5D3; max-width:230px;">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:26px; margin-bottom:12px;">Étiquettes produit</div>
+            <div style="font-size:13px; line-height:1.8; color:#D6C2A4;">La version trait devient le futur tampon en argile — un seul contour, parfaite pour marquer chaque pièce.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
