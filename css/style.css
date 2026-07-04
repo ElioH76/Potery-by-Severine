@@ -702,46 +702,37 @@ body:not(.menu-open) .site-header--hero:not(.is-scrolled) .nav-toggle span { bac
   transform: translateY(0);
 }
 
-/* ---- ④ Le savoir-faire (timeline) ---- */
-.timeline {
+/* ---- ④ Le savoir-faire (parcours horizontal compact) ---- */
+.process {
   position: relative;
-  margin-top: var(--space-xl);
-  padding: 0;          /* neutralise l'indentation par défaut de <ol> */
-  list-style: none;    /* pour aligner les nœuds sur la ligne centrale */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: clamp(1rem, 2vw, 2rem);
 }
-.timeline::before {
+/* Ligne de liaison horizontale passant derrière les pastilles */
+.process::before {
   content: "";
   position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, var(--color-terracotta-light), transparent);
-  opacity: 0.5;
+  top: 29px;                      /* centre vertical des pastilles (58/2) */
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-line), var(--color-line), transparent);
+  z-index: 0;
 }
-.timeline__step {
+.process__step {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-lg);
-  padding-block: clamp(1.5rem, 3vw, 2.6rem);
+  text-align: center;
+  gap: var(--space-2xs);
 }
-.timeline__content { }
-.timeline__step:nth-child(odd) .timeline__content {
-  grid-column: 1;
-  text-align: right;
-}
-.timeline__step:nth-child(odd) .timeline__media { grid-column: 3; }
-.timeline__step:nth-child(even) .timeline__content {
-  grid-column: 3;
-  text-align: left;
-}
-.timeline__step:nth-child(even) .timeline__media { grid-column: 1; }
-
-.timeline__node {
-  grid-column: 2;
+.process__badge {
   width: 58px;
   height: 58px;
   display: grid;
@@ -751,29 +742,39 @@ body:not(.menu-open) .site-header--hero:not(.is-scrolled) .nav-toggle span { bac
   border: 1px solid var(--color-line);
   box-shadow: var(--shadow-sm);
   color: var(--color-terracotta);
-  z-index: 1;
+  margin-bottom: var(--space-2xs);
+  transition: transform var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              background-color var(--dur-fast) var(--ease-soft),
+              color var(--dur-fast) var(--ease-soft);
 }
-.timeline__node svg { width: 26px; height: 26px; }
-.timeline__num {
+.process__step:hover .process__badge {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background: var(--color-terracotta);
+  color: var(--color-paper);
+}
+.process__badge svg { width: 26px; height: 26px; }
+.process__num {
   font-family: var(--font-sans);
-  font-size: var(--fs-label);
+  font-size: 0.7rem;
+  font-weight: 500;
   letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
   color: var(--color-terracotta);
 }
-.timeline__title {
+.process__title {
   font-family: var(--font-serif);
-  font-size: var(--fs-h3);
+  font-size: 1.35rem;
   font-weight: 500;
-  margin-top: 2px;
+  line-height: 1.1;
 }
-.timeline__text {
+.process__text {
   font-size: var(--fs-small);
   color: var(--color-clay-light);
-  margin-top: var(--space-2xs);
-  max-width: 34ch;
-  display: inline-block;
+  line-height: 1.5;
+  max-width: 22ch;
 }
-.timeline__step:nth-child(odd) .timeline__text { margin-left: auto; }
 
 /* ---- ⑤ Galerie (aperçu accueil) ---- */
 .gallery-preview__grid {

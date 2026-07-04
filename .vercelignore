@@ -1,5 +1,7 @@
 # Fichiers sources non nécessaires au site déployé
 # (les logos et photos utilisés sont déjà copiés dans assets/)
-design_handoff_brand_identity/
-images/
-.claude/
+# NB : le slash initial ancre le motif à la RACINE — sans lui, "images/"
+# exclurait aussi assets/images/ (règles de type .gitignore).
+/design_handoff_brand_identity/
+/images/
+/.claude/
