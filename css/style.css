@@ -532,7 +532,9 @@ body:not(.menu-open) .site-header--hero:not(.is-scrolled) .nav-toggle span { bac
 /* Fonds alternés */
 .section--paper { background: var(--color-paper); }
 .section--sand {
-  background: linear-gradient(180deg, var(--color-cream), var(--color-sand) 140%);
+  /* Sable nettement plus chaud/profond que le crème, pour bien démarquer
+     la section de ses voisines claires. */
+  background: linear-gradient(180deg, #ECDCC4 0%, #E4D2B8 100%);
 }
 .section--clay {
   background: var(--color-clay);
