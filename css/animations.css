@@ -4,6 +4,19 @@
    Le JS ajoute la classe `.is-visible` quand l'élément entre dans le viewport.
    ========================================================================== */
 
+/* ---- Filet de sécurité : sans JavaScript, rien ne reste masqué ----
+   La classe `js` est posée sur <html> par un script inline dans le <head>.
+   Si le JS est absent ou échoue à se charger, tout le contenu s'affiche
+   normalement au lieu de rester bloqué en opacité 0. */
+html:not(.js) [data-reveal],
+html:not(.js) [data-curtain],
+html:not(.js) [data-anim] .word__i {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}
+html:not(.js) [data-curtain]::after { display: none !important; }
+
 /* ---------------------- Keyframes ---------------------- */
 @keyframes scroll-wheel {
   0%   { opacity: 0; transform: translateY(0); }
@@ -82,17 +95,123 @@
 /* Parallaxe : le JS pilote --parallax via transform en translateY */
 .parallax { will-change: transform; }
 
-/* ---------------- Respect des préférences utilisateur ---------------- */
+/* ======================================================================
+   Système de motion « signé » (généré par js/animations.js)
+   ====================================================================== */
+
+/* ---------------- 1. Typographie cinétique (titres) ------------------
+   Chaque mot est enveloppé de <span class="word"><span class="word__i">.
+   Le mot monte derrière un masque (overflow) avec un léger décalage. */
+[data-anim] .word {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  /* marge de sécurité pour ne pas rogner les jambages (g, j, p…) */
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+[data-anim] .word__i {
+  display: inline-block;
+  will-change: transform;
+}
+[data-anim="title"] .word__i {
+  transform: translateY(115%) rotate(3deg);
+  transition: transform 0.9s var(--ease-out);
+}
+[data-anim="title"].is-visible .word__i {
+  transform: translateY(0) rotate(0);
+}
+
+/* ---------------- 2. Accroche : apparition mot à mot ---------------- */
+[data-anim="lead"] .word { overflow: visible; }
+[data-anim="lead"] .word__i {
+  opacity: 0;
+  transform: translateY(0.4em);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+[data-anim="lead"].is-visible .word__i {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------------- 3. Révélation « rideau » des images ---------------
+   Un panneau terracotta recouvre l'image puis se retire vers la droite,
+   tandis que l'image se dé-zoome doucement (contre-mouvement). */
+[data-curtain] {
+  position: relative;
+  overflow: hidden;
+}
+[data-curtain] > img,
+[data-curtain] > picture > img {
+  transform: scale(1.16);
+  transition: transform 1.25s var(--ease-out);
+  will-change: transform;
+}
+[data-curtain]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: var(--color-terracotta);
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition: transform 0.9s var(--ease-out);
+}
+[data-curtain].is-visible::after {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+[data-curtain].is-visible > img,
+[data-curtain].is-visible > picture > img {
+  transform: scale(1);
+}
+
+/* ---------------- 4. Trait du parcours qui se dessine ---------------- */
+.process::before {
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 1.3s var(--ease-out);
+}
+.process.is-drawn::before { transform: scaleX(1); }
+
+/* ---------------- Respect des préférences utilisateur ----------------
+   En mode « réduire les animations » on supprime les déplacements amples,
+   les rotations, le rideau et les boucles — mais on garde un simple fondu
+   d'opacité (mouvement nul, sans risque vestibulaire) pour que le contenu
+   apparaisse tout de même avec douceur au lieu d'être totalement figé. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-  [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+  /* Reveal générique : plus de translation, juste un fondu */
+  [data-reveal] {
+    transform: none !important;
+    transition: opacity 0.6s ease !important;
+  }
+
+  /* Titres & accroches : les mots apparaissent en fondu (sans monter) */
+  [data-anim] .word__i {
+    transform: none !important;
+    transition: opacity 0.5s ease !important;
+  }
+  [data-anim] .word__i { opacity: 0; }
+  [data-anim].is-visible .word__i { opacity: 1; }
+
+  /* Images : pas de rideau ni de zoom, un fondu de l'ensemble */
+  [data-curtain] {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+  [data-curtain].is-visible { opacity: 1; }
+  [data-curtain]::after { display: none !important; }
+  [data-curtain] > img { transform: none !important; }
+
   .hero__content > * { opacity: 1 !important; }
   .hero__media img { transform: none !important; }
+  .process::before { transform: scaleX(1) !important; }
 }

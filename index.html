@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#F1E5D3" />
 
+  <!-- Marque la présence de JS avant le premier rendu (évite tout flash) -->
+  <script>document.documentElement.classList.add("js");</script>
+
   <!-- SEO -->
   <title>Pottery by Séverine — Céramique artisanale & pièces uniques</title>
   <meta name="description" content="Atelier de céramique artisanale. Séverine façonne à la main vases, bols, tasses, assiettes et pièces uniques — des créations terreuses, douces et intemporelles." />
@@ -37,10 +40,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/variables.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/animations.css?v=3" />
+  <link rel="stylesheet" href="css/responsive.css?v=3" />
 
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
@@ -148,8 +151,8 @@
     <section class="section section--paper" id="univers" aria-labelledby="univers-title">
       <div class="container univers">
         <div class="univers__grid">
-          <div class="univers__portrait" data-reveal="left">
-            <div class="univers__portrait-frame">
+          <div class="univers__portrait" data-reveal="fade">
+            <div class="univers__portrait-frame" data-curtain>
               <img src="assets/images/pot-1.jpeg" alt="Vase en grès crème orné de fleurs modelées à la main, posé sur une étagère en bois" loading="lazy" />
             </div>
             <div class="univers__stamp" aria-hidden="true">
@@ -344,22 +347,22 @@
         </div>
 
         <div class="gallery-preview__grid">
-          <figure class="gallery-preview__item gallery-preview__item--tall" data-reveal data-delay="1">
+          <figure class="gallery-preview__item gallery-preview__item--tall" data-curtain>
             <img src="assets/images/pot-3.jpeg" alt="Vase en grès crème couvert de pastilles vertes à cœur noir" loading="lazy" />
           </figure>
-          <figure class="gallery-preview__item" data-reveal data-delay="2">
+          <figure class="gallery-preview__item" data-curtain>
             <img src="assets/images/pot-2.jpeg" alt="Duo de contenants rayés en grès émaillé gris et sable" loading="lazy" />
           </figure>
-          <figure class="gallery-preview__item gallery-preview__item--wide" data-reveal data-delay="3">
+          <figure class="gallery-preview__item gallery-preview__item--wide" data-curtain>
             <img src="assets/images/banner.jpeg" alt="Composition de céramiques et de plantes sur une étagère en bois" loading="lazy" />
           </figure>
-          <figure class="gallery-preview__item" data-reveal data-delay="2">
+          <figure class="gallery-preview__item" data-curtain>
             <img src="assets/images/panda.jpeg" alt="Figurine de panda en céramique" loading="lazy" />
           </figure>
-          <figure class="gallery-preview__item gallery-preview__item--tall" data-reveal data-delay="3">
+          <figure class="gallery-preview__item gallery-preview__item--tall" data-curtain>
             <img src="assets/images/poisson-1.jpeg" alt="Sculpture poisson en céramique aux lèvres rouges" loading="lazy" />
           </figure>
-          <figure class="gallery-preview__item" data-reveal data-delay="1">
+          <figure class="gallery-preview__item" data-curtain>
             <img src="assets/images/plateau-1.jpeg" alt="Plateau ajouré en céramique blanche" loading="lazy" />
           </figure>
         </div>
@@ -613,7 +616,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/animations.js" defer></script>
-  <script src="js/script.js" defer></script>
+  <script src="js/animations.js?v=3" defer></script>
+  <script src="js/script.js?v=3" defer></script>
 </body>
 </html>
